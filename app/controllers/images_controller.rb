@@ -24,8 +24,13 @@ class ImagesController < ApplicationController
   end
   def update
     @image = Image.find(params[:id])
-    @image = @image.update(image_params)
-    redirect_to images_path
+    if @image.update(image_params)
+      flash[:notice] = "Image updated"
+      redirect_to image_path(@image)
+    else
+      flash[:alert] = "Image update failed"
+      redirect_to image_path(@image)
+    end
   end
   def destroy
     @image = Image.find(params[:id])
