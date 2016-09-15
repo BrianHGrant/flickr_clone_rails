@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :users, only: :show do
     resources :tags, except: :index
   end
+  resources :contents, only: :index
 end

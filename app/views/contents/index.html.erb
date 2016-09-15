@@ -1,0 +1,6 @@
+<h2 class="center">Search Results</h2>
+<ul>
+<% @contents.each do |content| %>
+<li class="list-group-item"><%= image_tag(content.image.image.url, class: "img-responsive browse-images") %><span class="browse-titles"><%= content.image.description %></span> <%= link_to "image Page", image_path(content.image), :class => "btn btn-info btn-sm pull-right" %><% if current_user == content.image.user %>(editable by you)<%end%></li>
+<% end %>
+</ul>

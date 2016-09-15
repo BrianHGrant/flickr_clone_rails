@@ -1,6 +1,8 @@
 class ContentsController < ApplicationController
-  before_action :authenticate_user!, except: [:show]
-
+  before_action :authenticate_user!, except: [:show, :index]
+  def index
+    @contents = Content.search(params[:search])
+  end
   def show
     @content = Content.find(params[:id])
   end

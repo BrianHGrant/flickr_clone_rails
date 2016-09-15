@@ -1,15 +1,16 @@
 <h1 class="center">Image: <%= @image.description %></h1>
 <h4><%= link_to '&#127991; Person'.html_safe, new_image_tag_path(@image) %>
 <%= link_to '&#127991; Content'.html_safe, new_image_content_path(@image), class: "pull-right" %></h4>
-<%= image_tag(@image.image.url, class: "img-responsive") %>
+<div class="well">
+  <div class="image-box center">
+    <%= image_tag(@image.image.url, class: "img-responsive show-image") %>
+    <span class="browse-titles"><%= @image.description %></span>
+  </div>
+</div>
 <% if current_user == @image.user %>
-<div class="btn-group">
+<div class="center">
   <%= link_to "Edit", edit_image_path(@image), :class => "btn btn-primary" %>
   <%= link_to "Delete", image_path(@image), :class => "btn btn-danger", :data => {:confirm => "You Sure?", :method => 'delete'} %>
 </div>
 <% end %>
-
-
 <hr>
-
-<%= link_to "Back to Homepage", images_path %>

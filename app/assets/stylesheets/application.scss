@@ -47,4 +47,12 @@ body {
     font-weight: bold;
     margin-left: 20px;
   }
+  .image-box {
+    background-color: #fff;
+    padding: 20px;
+    .show-image {
+      border: 2px solid black;
+      padding: 20px;
+    }
+  }
 }
