@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :images do
     resources :tags, except: :index
+    resources :contents
   end
   resources :users, only: :show do
     resources :tags, except: :index

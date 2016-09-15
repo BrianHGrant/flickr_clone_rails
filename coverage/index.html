@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Flickr clone</title>
+    <title>Code coverage for Flickr clone rails</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-14T16:11:58-07:00">2016-09-14T16:11:58-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-15T11:44:49-07:00">2016-09-15T11:44:49-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">88.61%</span></span>
+    (<span class="covered_percent"><span class="red">75.51%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.95
+         0.84
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>158</b> relevant lines. 
-    <span class="green"><b>140</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <b>36</b> files in total.
+    <b>245</b> relevant lines. 
+    <span class="green"><b>185</b> lines covered</span> and
+    <span class="red"><b>60</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#68ae9b7bc83bf64f04efcc3fc3b131640c088b90" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
+        <td class="strong"><a href="#9616df0656139797aba882fbab7c472afec51ec0" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -61,7 +61,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0df727533df2a70d69278d5fdc8ef31442955965" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
+        <td class="strong"><a href="#5a6f2c834c22f9fb5e5fd1c700a81e179b1fc225" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -71,7 +71,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ee20c961d27116922ecd83afa7b6195ef867a251" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="strong"><a href="#8619f5b319653870a61224e4ad2588c2b131f546" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
         <td>7</td>
@@ -81,17 +81,37 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#4322f74f16efce3303bf401810ad042734aa6858" class="src_link" title="app/controllers/images_controller.rb">app/controllers/images_controller.rb</a></td>
+        <td class="strong"><a href="#31d21335244533dbeb804e083a2de7eeca3a0b8f" class="src_link" title="app/controllers/images_controller.rb">app/controllers/images_controller.rb</a></td>
         <td class="red strong">40.0 %</td>
         <td>43</td>
         <td>30</td>
         <td>12</td>
         <td>18</td>
-        <td>0.5</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#e420a5e7110bccbb358eea7f7134ec2a2752762b" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="strong"><a href="#d69d45fb5ba24397e1ba247de549c9087054ec7d" class="src_link" title="app/controllers/tags_controller.rb">app/controllers/tags_controller.rb</a></td>
+        <td class="red strong">32.26 %</td>
+        <td>44</td>
+        <td>31</td>
+        <td>10</td>
+        <td>21</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#194e34066c7924e19f8861ffabe8e7a65264591f" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6db77f776ab690216e6e98bdeb28db86dd3a60b0" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -101,7 +121,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b45c39b7375ff1d92ce388e1751b01257e9c4ccc" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+        <td class="strong"><a href="#286072df2fc563cf01bd7272538d2dc85e4ee1a0" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -111,7 +131,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#9dbce3d303e2534a53edb1f7d03ee8a4721bfbc7" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
+        <td class="strong"><a href="#4571f7e3334be7df4da222b310360dbef434def3" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>3</td>
@@ -121,17 +141,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#37ea227c56391b79482b330c2ffb25581491460f" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
+        <td class="strong"><a href="#798bcf1176a4f1b12073cc743488fe371f6c6a63" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#25c1d120d8dbbfa3f0dfe0e9e0023fc7ffd0ded5" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="strong"><a href="#59c4c733aa3346a675ec4ea2b4c0d4db4e650364" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -141,27 +161,47 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#8c4ebbc53165d87fb34d399d7870b729e5af1709" class="src_link" title="app/models/image.rb">app/models/image.rb</a></td>
+        <td class="strong"><a href="#cbab59565179b1a59c17d2a453ad39ec0a92eed6" class="src_link" title="app/models/content.rb">app/models/content.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#66fc6e7d3f40e7e1d7d4a9686c479440d814682c" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="strong"><a href="#c67ae7fdaac8ca7b8dc81cb90cbb836bf3b385b8" class="src_link" title="app/models/image.rb">app/models/image.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
         <td>8</td>
-        <td>8</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#3fc4cfe74ab4ca1537c44c776aa1057f8bc6f8ac" class="src_link" title="config/application.rb">config/application.rb</a></td>
+        <td class="strong"><a href="#9c53086804dfef614e52f9a3e0df4063c33e03ae" class="src_link" title="app/models/tag.rb">app/models/tag.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#50306db0f9d67446611a2e007aefbc47ddb723d2" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#67e5fb6f7ccd5f18239566e3f244c7913cade88c" class="src_link" title="config/application.rb">config/application.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>25</td>
         <td>13</td>
@@ -171,7 +211,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0ece84d662f3c31e135b717b708856257fce1087" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
+        <td class="strong"><a href="#6a89229752781ac0e2c0ef5752cb6eadfe29a3a1" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -181,7 +221,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ccb990519a89daf8f04fea7ecd68f9ddc59cadab" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
+        <td class="strong"><a href="#509c30c3e17a0fbf2cb986e7bd322f5fb18a41f7" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>2</td>
@@ -191,7 +231,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#122c2987dd8fb9b912323f7b95732a10b71f246f" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
+        <td class="strong"><a href="#8865b4bdd5c0ec3a0849078c14c7aabbac7b3090" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>42</td>
         <td>12</td>
@@ -201,7 +241,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2424554d3719d859de40856526f28abccc1fae88" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
+        <td class="strong"><a href="#ce107c12e68a5c45145af0f246fe729d172387c0" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>0</td>
@@ -211,7 +251,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ce7b7fb718c61a54ab5a570365740cb0838116df" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
+        <td class="strong"><a href="#1906a8fa6dc53b65d09732c2695bc0c5963cd5c0" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
         <td>1</td>
@@ -221,7 +261,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#829d776968223f1cdbf0b3916909d5c67e24cc40" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
+        <td class="strong"><a href="#185f2e533c71ca354b3b8ac94711bbc1e04478fb" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>0</td>
@@ -231,7 +271,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#942f372019dd1f1736b4458e862126826ec33a50" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
+        <td class="strong"><a href="#8e7ec3c3740dfb3f10feb67f9ed667d35b6d53ab" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>1</td>
@@ -241,7 +281,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#8e9aa4719e3ada8cb2698f6317eb46296e5c0fe6" class="src_link" title="config/initializers/devise.rb">config/initializers/devise.rb</a></td>
+        <td class="strong"><a href="#ec37f96ac829820917988a5008e7efe70389cc9e" class="src_link" title="config/initializers/devise.rb">config/initializers/devise.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>274</td>
         <td>14</td>
@@ -251,7 +291,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#469a77c18b22aa2800faba9fd703910391bc2ccb" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
+        <td class="strong"><a href="#f38205bd44924c9d52d2a43de77af1b58b520764" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>1</td>
@@ -261,7 +301,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2a40fb0b12734a9167d05392db7f814798c92d54" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
+        <td class="strong"><a href="#53e2ff2a8c3ce22408a545899214a6da6f52f718" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>16</td>
         <td>0</td>
@@ -271,7 +311,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#93b095e8bdd2085904bee48d1db76f0f989a09e4" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
+        <td class="strong"><a href="#5c83c43e53dcb558c473b74109755ceab4e2b1e7" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>0</td>
@@ -281,7 +321,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b8d5d35e26638a054cd07792b3fc24698e385dfc" class="src_link" title="config/initializers/new_framework_defaults.rb">config/initializers/new_framework_defaults.rb</a></td>
+        <td class="strong"><a href="#7f25b95145e93ce76e3fad4a6a7c3779b2f77b3b" class="src_link" title="config/initializers/new_framework_defaults.rb">config/initializers/new_framework_defaults.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>24</td>
         <td>6</td>
@@ -291,7 +331,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1d786d8ada7583bde2ccb8c55d323de0692e6e83" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
+        <td class="strong"><a href="#e9eb95e850e073082ee3a240e41da497d0e085a2" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>1</td>
@@ -301,7 +341,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5fc66c0b79f8fc3557987e80ed07cad701cc83e5" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
+        <td class="strong"><a href="#f16e7950040c5f6c2e99f7dbda9cfd4c8857c442" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>2</td>
@@ -311,17 +351,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#dbf3abaa61bd59b3cffb2fc9d7cff0c149fa1324" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
+        <td class="strong"><a href="#eb2e1e9b93013ff3ef5dbac4cdbab5d222077d74" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#19f06409ca306bae19525d3820718b723a07851f" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
+        <td class="strong"><a href="#72151f9a80c685ac41ae02004f615b973b36e452" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>4</td>
@@ -331,7 +371,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#91ac84eabcbafa070ae53ac8c2d31d260375b20f" class="src_link" title="spec/features/add_users_page_spec.rb">spec/features/add_users_page_spec.rb</a></td>
+        <td class="strong"><a href="#66690967d08f7482dca02ce9bcf944dc85957f87" class="src_link" title="spec/features/add_image_pages_spec.rb">spec/features/add_image_pages_spec.rb</a></td>
+        <td class="red strong">41.67 %</td>
+        <td>29</td>
+        <td>24</td>
+        <td>10</td>
+        <td>14</td>
+        <td>0.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#47868f21145a2b005e062db3c2f6a8ad68a0385c" class="src_link" title="spec/features/add_users_page_spec.rb">spec/features/add_users_page_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>20</td>
         <td>15</td>
@@ -341,7 +391,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#88f64907196161a7d263c953833cd24376a1c924" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
+        <td class="strong"><a href="#56cf6977fb7c1d1050fa0fb30519a3f0f6f046a4" class="src_link" title="spec/features/login_users_pages_spec.rb">spec/features/login_users_pages_spec.rb</a></td>
+        <td class="red strong">60.0 %</td>
+        <td>20</td>
+        <td>15</td>
+        <td>9</td>
+        <td>6</td>
+        <td>0.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#35aa5c1cee5e901ebd828c330294ddc756a0f45f" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>104</td>
         <td>15</td>
@@ -366,7 +426,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="68ae9b7bc83bf64f04efcc3fc3b131640c088b90">
+        <div class="source_table" id="9616df0656139797aba882fbab7c472afec51ec0">
   <div class="header">
     <h3>app/channels/application_cable/channel.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -408,7 +468,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="0df727533df2a70d69278d5fdc8ef31442955965">
+        <div class="source_table" id="5a6f2c834c22f9fb5e5fd1c700a81e179b1fc225">
   <div class="header">
     <h3>app/channels/application_cable/connection.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -450,7 +510,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="ee20c961d27116922ecd83afa7b6195ef867a251">
+        <div class="source_table" id="8619f5b319653870a61224e4ad2588c2b131f546">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -528,7 +588,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="4322f74f16efce3303bf401810ad042734aa6858">
+        <div class="source_table" id="31d21335244533dbeb804e083a2de7eeca3a0b8f">
   <div class="header">
     <h3>app/controllers/images_controller.rb</h3>
     <h4><span class="red">40.0 %</span> covered</h4>
@@ -560,8 +620,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="4">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
           
           <code class="ruby">    @images = Image.all</code>
         </li>
@@ -804,7 +864,349 @@
   </pre>
 </div>
       
-        <div class="source_table" id="e420a5e7110bccbb358eea7f7134ec2a2752762b">
+        <div class="source_table" id="d69d45fb5ba24397e1ba247de549c9087054ec7d">
+  <div class="header">
+    <h3>app/controllers/tags_controller.rb</h3>
+    <h4><span class="red">32.26 %</span> covered</h4>
+    <div>
+      <b>31</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>21</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TagsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :authenticate_user!, except: [:show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @tag = Tag.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @tag = Tag.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    @users = User.all</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    @image = Image.find(params[:image_id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    @tag = @image.tags.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    @image = Image.find(params[:image_id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    @tag = @image.tags.new(tag_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    if @tag.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Tag Added&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">      redirect_to image_path(@image)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">      flash[:alert] = &quot;Unable to tab&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">      render :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    @tag = Tag.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">    @tag = @tag.update(tag_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">    redirect_to image_path(@tag.image)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">    @tag = Tag.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">    if @tag.delete</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Tag removed&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">      redirect_to image_path(@tag.image)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">      flash[:alert] = &quot;Unable to remove tag&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def tag_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">    params.require(:tag).permit(:image_id, :user_id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="194e34066c7924e19f8861ffabe8e7a65264591f">
+  <div class="header">
+    <h3>app/controllers/users_controller.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class UsersController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :authenticate_user!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @tags= Tag.where(user_id: current_user.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="6db77f776ab690216e6e98bdeb28db86dd3a60b0">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -834,7 +1236,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b45c39b7375ff1d92ce388e1751b01257e9c4ccc">
+        <div class="source_table" id="286072df2fc563cf01bd7272538d2dc85e4ee1a0">
   <div class="header">
     <h3>app/jobs/application_job.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -864,7 +1266,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="9dbce3d303e2534a53edb1f7d03ee8a4721bfbc7">
+        <div class="source_table" id="4571f7e3334be7df4da222b310360dbef434def3">
   <div class="header">
     <h3>app/mailers/application_mailer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -906,7 +1308,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="37ea227c56391b79482b330c2ffb25581491460f">
+        <div class="source_table" id="798bcf1176a4f1b12073cc743488fe371f6c6a63">
   <div class="header">
     <h3>app/mailers/user_mailer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -974,8 +1376,8 @@
           <code class="ruby">  def signup_confirmation(user)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
           <code class="ruby">    @user = user</code>
         </li>
@@ -986,8 +1388,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">    mail to: user.email, subject: &quot;Sign Up Confirmation&quot;</code>
         </li>
@@ -1008,7 +1410,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="25c1d120d8dbbfa3f0dfe0e9e0023fc7ffd0ded5">
+        <div class="source_table" id="59c4c733aa3346a675ec4ea2b4c0d4db4e650364">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1044,13 +1446,55 @@
   </pre>
 </div>
       
-        <div class="source_table" id="8c4ebbc53165d87fb34d399d7870b729e5af1709">
+        <div class="source_table" id="cbab59565179b1a59c17d2a453ad39ec0a92eed6">
+  <div class="header">
+    <h3>app/models/content.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Content &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :image</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates_presence_of :name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c67ae7fdaac8ca7b8dc81cb90cbb836bf3b385b8">
   <div class="header">
     <h3>app/models/image.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1088,7 +1532,19 @@
           <code class="ruby">  belongs_to :user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :tags</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :contents</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -1098,13 +1554,55 @@
   </pre>
 </div>
       
-        <div class="source_table" id="66fc6e7d3f40e7e1d7d4a9686c479440d814682c">
+        <div class="source_table" id="9c53086804dfef614e52f9a3e0df4063c33e03ae">
+  <div class="header">
+    <h3>app/models/tag.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Tag &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :user</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :image</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="50306db0f9d67446611a2e007aefbc47ddb723d2">
   <div class="header">
     <h3>app/models/user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1145,58 +1643,64 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  def send_welcome_message</code>
+          <code class="ruby">  has_many :tags</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    UserMailer.signup_confirmation(self).deliver</code>
+          <code class="ruby">  def send_welcome_message</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    UserMailer.signup_confirmation(self).deliver</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  devise :database_authenticatable, :registerable,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">         :recoverable, :rememberable, :trackable, :validatable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">  has_attached_file :avatar, :styles =&gt; { :medium =&gt; &quot;300x300&gt;&quot;, :thumb =&gt; &quot;100x100#&quot;}, :default_url =&gt; &quot;/images/:style/missing.jpeg&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  validates_attachment_content_type :avatar, :content_type =&gt; /\Aimage\/.*\Z/</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -1206,7 +1710,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="3fc4cfe74ab4ca1537c44c776aa1057f8bc6f8ac">
+        <div class="source_table" id="67e5fb6f7ccd5f18239566e3f244c7913cade88c">
   <div class="header">
     <h3>config/application.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1374,7 +1878,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="0ece84d662f3c31e135b717b708856257fce1087">
+        <div class="source_table" id="6a89229752781ac0e2c0ef5752cb6eadfe29a3a1">
   <div class="header">
     <h3>config/boot.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1410,7 +1914,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="ccb990519a89daf8f04fea7ecd68f9ddc59cadab">
+        <div class="source_table" id="509c30c3e17a0fbf2cb986e7bd322f5fb18a41f7">
   <div class="header">
     <h3>config/environment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1458,7 +1962,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="122c2987dd8fb9b912323f7b95732a10b71f246f">
+        <div class="source_table" id="8865b4bdd5c0ec3a0849078c14c7aabbac7b3090">
   <div class="header">
     <h3>config/environments/test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1728,7 +2232,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="2424554d3719d859de40856526f28abccc1fae88">
+        <div class="source_table" id="ce107c12e68a5c45145af0f246fe729d172387c0">
   <div class="header">
     <h3>config/initializers/application_controller_renderer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1782,7 +2286,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="ce7b7fb718c61a54ab5a570365740cb0838116df">
+        <div class="source_table" id="1906a8fa6dc53b65d09732c2695bc0c5963cd5c0">
   <div class="header">
     <h3>config/initializers/assets.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1866,7 +2370,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="829d776968223f1cdbf0b3916909d5c67e24cc40">
+        <div class="source_table" id="185f2e533c71ca354b3b8ac94711bbc1e04478fb">
   <div class="header">
     <h3>config/initializers/backtrace_silencers.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1926,7 +2430,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="942f372019dd1f1736b4458e862126826ec33a50">
+        <div class="source_table" id="8e7ec3c3740dfb3f10feb67f9ed667d35b6d53ab">
   <div class="header">
     <h3>config/initializers/cookies_serializer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1974,7 +2478,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="8e9aa4719e3ada8cb2698f6317eb46296e5c0fe6">
+        <div class="source_table" id="ec37f96ac829820917988a5008e7efe70389cc9e">
   <div class="header">
     <h3>config/initializers/devise.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3636,7 +4140,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="469a77c18b22aa2800faba9fd703910391bc2ccb">
+        <div class="source_table" id="f38205bd44924c9d52d2a43de77af1b58b520764">
   <div class="header">
     <h3>config/initializers/filter_parameter_logging.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3678,7 +4182,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="2a40fb0b12734a9167d05392db7f814798c92d54">
+        <div class="source_table" id="53e2ff2a8c3ce22408a545899214a6da6f52f718">
   <div class="header">
     <h3>config/initializers/inflections.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3792,7 +4296,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="93b095e8bdd2085904bee48d1db76f0f989a09e4">
+        <div class="source_table" id="5c83c43e53dcb558c473b74109755ceab4e2b1e7">
   <div class="header">
     <h3>config/initializers/mime_types.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3834,7 +4338,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b8d5d35e26638a054cd07792b3fc24698e385dfc">
+        <div class="source_table" id="7f25b95145e93ce76e3fad4a6a7c3779b2f77b3b">
   <div class="header">
     <h3>config/initializers/new_framework_defaults.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3996,7 +4500,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="1d786d8ada7583bde2ccb8c55d323de0692e6e83">
+        <div class="source_table" id="e9eb95e850e073082ee3a240e41da497d0e085a2">
   <div class="header">
     <h3>config/initializers/session_store.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -4032,7 +4536,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="5fc66c0b79f8fc3557987e80ed07cad701cc83e5">
+        <div class="source_table" id="f16e7950040c5f6c2e99f7dbda9cfd4c8857c442">
   <div class="header">
     <h3>config/initializers/wrap_parameters.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -4134,13 +4638,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="dbf3abaa61bd59b3cffb2fc9d7cff0c149fa1324">
+        <div class="source_table" id="eb2e1e9b93013ff3ef5dbac4cdbab5d222077d74">
   <div class="header">
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4169,10 +4673,46 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  resources :images</code>
+          <code class="ruby">  resources :images do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    resources :tags, except: :index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    resources :contents</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  resources :users, only: :show do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    resources :tags, except: :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -4182,7 +4722,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="19f06409ca306bae19525d3820718b723a07851f">
+        <div class="source_table" id="72151f9a80c685ac41ae02004f615b973b36e452">
   <div class="header">
     <h3>spec/factories.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -4236,7 +4776,199 @@
   </pre>
 </div>
       
-        <div class="source_table" id="91ac84eabcbafa070ae53ac8c2d31d260375b20f">
+        <div class="source_table" id="66690967d08f7482dca02ce9bcf944dc85957f87">
+  <div class="header">
+    <h3>spec/features/add_image_pages_spec.rb</h3>
+    <h4><span class="red">41.67 %</span> covered</h4>
+    <div>
+      <b>24</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>14</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;the add an image path&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will allow an authenticated user to add image&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Login&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;user@email.com&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;123456&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    click_link &#39;Add a image&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    attach_file &quot;Image&quot;, &quot;public/images/thumb/missing.jpeg&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;user@email.com&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    click_on &quot;Create Image&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    expect(page).to have_content(&quot;user@email.com image Page&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;gives error when no image is attached&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Login&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;user@email.com&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;123456&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">    click_link &#39;Add a image&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    click_on &quot;Create Image&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Image failed to save&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="47868f21145a2b005e062db3c2f6a8ad68a0385c">
   <div class="header">
     <h3>spec/features/add_users_page_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -4374,7 +5106,145 @@
   </pre>
 </div>
       
-        <div class="source_table" id="88f64907196161a7d263c953833cd24376a1c924">
+        <div class="source_table" id="56cf6977fb7c1d1050fa0fb30519a3f0f6f046a4">
+  <div class="header">
+    <h3>spec/features/login_users_pages_spec.rb</h3>
+    <h4><span class="red">60.0 %</span> covered</h4>
+    <div>
+      <b>15</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;the login a user process&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;adds a new user&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Login&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;user@email.com&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;123456&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    expect(page).to have_content &#39;Signed in successfully.&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;gives error when no email is entered&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Login&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    expect(page).to have_content &quot;Invalid Email or password.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="35aa5c1cee5e901ebd828c330294ddc756a0f45f">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
