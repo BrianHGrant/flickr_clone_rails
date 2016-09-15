@@ -1,19 +1,21 @@
 <hr>
-<%= current_user.email %>
-<h4>Your Images</h4>
-<% current_user.images.each do |image| %>
-<br>
-<strong><%= image.description %></strong>
-
-<%= image_tag(image.image.url) %>
+<h2 class="center">User: <%= current_user.email %> <%= link_to '&#9998;'.html_safe, edit_user_registration_path %></h2>
+<div class="row">
+  <div class="col-sm-5">
+    <h4 class="center">Your Uploads</h4>
+    <ul>
+    <% current_user.images.each do |image| %>
+    <li class="list-group-item"><%= image_tag(image.image.url, class: "img-responsive browse-images") %><span class="browse-titles"><%= image.description %></span> <%= link_to "image Page", image_path(image), :class => "btn btn-info btn-sm pull-right" %><% if current_user == image.user %>(editable by you)<%end%></li>
+    <% end %>
+    </ul>
+  </div>
+  <div class="col-sm-offset-1 col-sm-5">
+    <h4 class="center">You've been tagged</h4>
+    <ul>
+    <% @tags.each do |tag| %>
+    <li class="list-group-item"><%= image_tag(tag.image.image.url, class: "img-responsive browse-images") %><span class="browse-titles"><%= tag.image.description %></span> <%= link_to "image Page", image_path(tag.image), :class => "btn btn-info btn-sm pull-right" %><% if current_user == tag.image.user %>(editable by you)<%end%></li>
+    <% end %>
+    </ul>
+  </div>
+</div>
 <hr>
-<% end %>
-<h4>Your Favorites</h4>
-<% current_user.favorites_images.each do |image_id| %>
-<% image = Image.find(image_id) %>
-<br>
-<strong><%= image.description %></strong>
-
-<%= image_tag(image.image.url) %>
-<hr>
-<% end %>

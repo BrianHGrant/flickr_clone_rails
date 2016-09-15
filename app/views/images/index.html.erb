@@ -1,12 +1,8 @@
-<h1>image Page</h1>
+<h1>Browse Images</h1>
 <hr>
 <ul class="list-group well">
   <% @images.each do |image| %>
-    <li class="list-group-item"><strong><%= image.description %></strong> <%= link_to "image Page", image_path(image), :class => "btn btn-info btn-sm pull-right" %><% if current_user == image.user %>(editable by you)<%end%></li>
+    <li class="list-group-item"><%= image_tag(image.image.url, class: "img-responsive browse-images") %><span class="browse-titles"><%= image.description %></span> <%= link_to "image Page", image_path(image), :class => "btn btn-info btn-sm pull-right" %><% if current_user == image.user %>(editable by you)<%end%></li>
   <% end %>
 </ul>
 <hr>
-<%= link_to "Add a image", new_image_path, :class => "btn-lg"%>
-<% if current_user %>
-<%= link_to "User Page", user_path(current_user) %>
-<% end %>

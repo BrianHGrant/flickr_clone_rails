@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   after_create :send_welcome_message
   has_many :images
+  has_many :tags
   def send_welcome_message
     UserMailer.signup_confirmation(self).deliver
   end

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root :to => 'images#index'
   devise_for :users
-  resources :images
-  resources :users, only: :show
+  resources :images do
+    resources :tags, except: :index
+  end
+  resources :users, only: :show do
+    resources :tags, except: :index
+  end
 end

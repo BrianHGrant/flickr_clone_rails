@@ -3,4 +3,5 @@ class Image < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   validates :description, presence: true
   belongs_to :user
+  has_many :tags
 end

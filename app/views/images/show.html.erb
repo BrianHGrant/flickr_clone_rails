@@ -1,21 +1,10 @@
-<h1><%= @image.description %> Page</h1>
-<%= image_tag(@image.image.url) %>
-
-<% if 1 == 0 %>
-<ul class="list-group well">
-  <% @image.secondmodels.each do |secondmodel| %>
-  <li class="list-group-item"><strong><%= secondmodel.name %></strong> <%= link_to "View secondmodel", image_secondmodel_path(@image, secondmodel), :class => "btn btn-info btn-sm pull-right"%></li>
-  <% end %>
-</ul>
-<% end %>
+<h1 class="center">Image: <%= @image.description %><%= link_to '&#127991;'.html_safe, new_image_tag_path(@image) %></h1>
+<%= image_tag(@image.image.url, class: "img-responsive") %>
 
 <% if current_user == @image.user %>
 <div class="btn-group">
   <%= link_to "Edit", edit_image_path(@image), :class => "btn btn-primary" %>
-  <%= link_to "Delete", image_path(@image), :class => "btn btn-primary", :data => {:confirm => "You Sure?", :method => 'delete'} %>
-  <% if 1 == 0 %>
-  <%= link_to "Add a secondmodel", new_image_secondmodel_path(@image), :class => "btn btn-primary" %>
-  <% end %>
+  <%= link_to "Delete", image_path(@image), :class => "btn btn-danger", :data => {:confirm => "You Sure?", :method => 'delete'} %>
 </div>
 <% end %>
 
