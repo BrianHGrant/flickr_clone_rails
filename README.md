@@ -2,9 +2,9 @@
 
 ## Description
 
-Application built on Ruby on Rails as clone of Flickr. Uses Devise as authentication and paperclip to save files. Allows searching by content tag and tagging of users. Useses SASS for styling.
+Application built on Ruby on Rails as clone of Flickr. Uses Devise as authentication and paperclip to save files. Allows searching by content tag and tagging of users. Uses SASS for styling.
 ## Ruby version
-Version: 2.3.1<br>
+Version: >= 2.2.1<br>
 Rails: '~> 5.0.0', '>= 5.0.0.1'
 
 ## System dependencies
@@ -21,9 +21,8 @@ This application requires:
     * Run 'rails db:create'
     * Run 'rails db:migrate'
     * Run 'rails db:test:prepare'
-  5. Create .env file (see below)
-  6. Run 'rails server' to start local server
-  7. Open 'localhost:3000' in your browser
+  5. Run 'rails server' to start local server
+  6. Open 'localhost:3000' in your browser
 
 ## Contact
   Contact me @ <a href="mailto:bhgrant@gmail.com">bhgrant8@gmail.com</a><br>
